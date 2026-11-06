@@ -1,0 +1,114 @@
+/* Import Google Fonts: Cinzel, Inter, and Noto Serif SC */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap");
+
+@import "./tokens.css";
+@import "./layout.css";
+
+/* Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-obsidian);
+  color: var(--color-ivory);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Tipografi Headings Dasar */
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  color: var(--color-ivory);
+  letter-spacing: var(--tracking-display);
+  font-weight: var(--weight-medium);
+}
+
+h1 {
+  line-height: var(--leading-tight);
+}
+
+h2, h3 {
+  line-height: var(--leading-heading);
+}
+
+/* Teks Seleksi Elegan (Restrained Gold) */
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-obsidian);
+}
+
+/* Link & Kursor */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-editorial);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Gambar Responsif */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Focus Visible untuk Aksesibilitas Keyboard */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Custom Scrollbar Obsidian Gold */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-sm);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-muted);
+}
+
+/* Aksesibilitas: Menghormati Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

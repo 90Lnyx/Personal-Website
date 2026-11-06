@@ -1,0 +1,88 @@
+:root {
+  /* ==========================================================================
+     1. COLOR SYSTEM (Obsidian Gold Imperial)
+     ========================================================================== */
+  --color-obsidian: #0B0B0D;       /* Latar utama */
+  --color-charcoal: #141416;       /* Latar sekunder / variasi section */
+  --color-surface: #1C1B1A;        /* Permukaan kartu / panel elevasi */
+
+  --color-gold: #C2A46D;           /* Aksen primer: CTA, active states, penekanan */
+  --color-gold-muted: #8F7952;     /* Aksen sekunder: Ornamen, dekorasi sekunder */
+
+  --color-ivory: #E8E0D2;          /* Teks primer: Headings, body utama */
+  --color-gray: #A6A19A;           /* Teks sekunder: Deskripsi, detail pendukung */
+  --color-gray-muted: #6F6B65;     /* Teks tersier: Caption, metadata, timestamp */
+
+  --color-border: #302D28;         /* Pembatas dan garis halus ber-kontras rendah */
+  --color-border-gold: rgba(194, 164, 109, 0.35); /* Garis aksen emas selektif */
+
+  /* ==========================================================================
+     2. TYPOGRAPHY SYSTEM
+     ========================================================================== */
+  --font-display: "Cinzel", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mandarin: "Noto Serif SC", serif;
+
+  /* Fluid Typography Scale (Desktop -> Tablet -> Mobile via clamp) */
+  --text-hero: clamp(3.25rem, 8vw, 9rem);             /* 52px -> 144px */
+  --text-subtitle: clamp(1.0625rem, 2vw, 2rem);       /* 17px -> 32px */
+  --text-page: clamp(2.25rem, 5vw, 4.5rem);           /* 36px -> 72px */
+  --text-section: clamp(1.75rem, 3.5vw, 3rem);        /* 28px -> 48px */
+  --text-project: clamp(1.25rem, 2vw, 1.75rem);       /* 20px -> 28px */
+  --text-lead: clamp(1rem, 1.3vw, 1.25rem);           /* 16px -> 20px */
+  --text-body: clamp(0.875rem, 1vw, 1.0625rem);       /* 14px -> 17px */
+  --text-caption: clamp(0.6875rem, 0.9vw, 0.875rem);  /* 11px -> 14px */
+  --text-eyebrow: clamp(0.625rem, 0.8vw, 0.75rem);    /* 10px -> 12px */
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.05;
+  --leading-heading: 1.15;
+  --leading-title: 1.25;
+  --leading-body: 1.65;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0.02em;
+  --tracking-display: 0.06em;
+  --tracking-eyebrow: 0.16em;
+
+  /* ==========================================================================
+     3. SPACING SYSTEM (Kelipatan 4px)
+     ========================================================================== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ==========================================================================
+     4. LAYOUT & CONTAINER
+     ========================================================================== */
+  --container-max: 1440px;
+  --container-width: 92%;
+
+  /* Radius (Konsisten bersudut minimal / restrained luxury) */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* ==========================================================================
+     5. MOTION & TRANSITION
+     ========================================================================== */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
