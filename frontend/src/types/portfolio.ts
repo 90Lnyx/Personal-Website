@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export type PortfolioMode = 'gateway' | 'archive';
 
 export type SectionIndex = 0 | 1 | 2 | 3;
@@ -58,4 +59,23 @@ export interface PortfolioData {
       };
     };
   };
+=======
+export type PortfolioMode = 'hr' | 'dev';
+
+export type ArchiveView = 'opening' | 'hero' | 'intro' | 'artifact' | 'journey' | 'contact';
+
+export interface WaypointChapter {
+	id: ArchiveView;
+	roman: string;
+	char: string;
+	title: string;
+	subtitle: string;
+}
+
+export interface NavigationState {
+	mode: PortfolioMode;
+	currentView: ArchiveView;
+	navUnlocked: boolean;
+	unlockedViews: Set<ArchiveView>;
+>>>>>>> dac8256b3839786fe205e33fd0e0c9525a51bbdd
 }
